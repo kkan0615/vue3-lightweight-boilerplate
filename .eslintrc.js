@@ -5,7 +5,6 @@ module.exports = {
     parser: '@typescript-eslint/parser',
   },
   extends: [
-    // add more generic rulesets here, such as:
     'eslint:recommended',
     'plugin:vue/vue3-recommended',
   ],
