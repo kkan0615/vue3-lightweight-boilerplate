@@ -23,7 +23,7 @@
 │  │   ├─ langs/                # Lanuges collection.
 │  │   ├─ index.ts/             # i18n config.
 │  ├─ router/                   # Router.
-│  │   ├─ modules/              # Modulized router.
+│  │   ├─ routes/               # Modulized routes.
 │  │   ├─ index.ts/             # router config.
 │  ├─ store/                    # Pinina or vue-store.
 │  │   ├─ modules/              # Modulized store.
@@ -60,4 +60,4 @@ yarn build
 # Todo
 - Unit test module
 - cypress
-- Add pinia, vue3-router, vuei18n
+- Add pinia, vuei18n
