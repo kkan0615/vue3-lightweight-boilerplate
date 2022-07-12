@@ -16,6 +16,7 @@
 ```
 ├─ node_modules/
 ├─ public/
+├─ scripts/                     # Scripts Collection
 ├─ src/
 │  ├─ assets/                   # Assets for renderer.
 │  ├─ components/               # Contain global components.
