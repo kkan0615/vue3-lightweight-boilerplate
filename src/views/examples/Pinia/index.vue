@@ -51,8 +51,8 @@ export default {
 }
 </script>
 <script setup lang="ts">
-import useExampleStore from '@/store/modules/example'
 import { ref } from 'vue'
+import useExampleStore from '@/store/modules/example'
 
 const exampleStore = useExampleStore()
 

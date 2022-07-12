@@ -12,6 +12,27 @@
 - eslint
 - sass/scss
 
+## Considerable libraries
+- [vue-use](https://github.com/antfu/vueuse): Provide useful utilities in vue 
+- [vite-plugin-pages](https://github.com/hannoeru/vite-plugin-pages): File based pages
+- [unplugin-vue-components](https://github.com/antfu/unplugin-vue-components): Auto add components globally
+
+# Getting Started
+## Dev
+```shell
+yarn dev
+```
+## Build
+```shell
+yarn build
+```
+
+# Default settings
+## Vite
+| key                 | value | Description                                                                                                             |
+|---------------------|-------|-------------------------------------------------------------------------------------------------------------------------|
+| reactivityTransform | false | Because of errors in typescript, Do change it true <br>[link](https://vuejs.org/guide/extras/reactivity-transform.html) |
+
 # Directory Structure
 ```
 ├─ node_modules/
@@ -52,19 +73,12 @@
 ├─ WhatEverName/                # WhatEverName link page
 ```
 
-# Getting Started
-## Dev
-```shell
-yarn dev
-```
-## Build
-```shell
-yarn build
-```
-
 # Refs
+- (vitesse)[https://github.com/antfu/vitesse]
+
 
 # Todo
-- Unit test module
+- Unit test module (vitest)
 - cypress
-- Add pinia, vuei18n
+- vuei18n
+- PWA
