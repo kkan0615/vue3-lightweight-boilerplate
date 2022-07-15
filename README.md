@@ -1,9 +1,9 @@
-# vue 3 + Typescript
+# vue 3 + Typescript + Vite 3.0
 
 # Tack stack
 - Vue 3
 - Typescript
-- Vite
+- Vite 3.0
 
 # libraries
 - vue-router-v4
