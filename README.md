@@ -76,9 +76,3 @@ yarn build
 # Refs
 - (vitesse)[https://github.com/antfu/vitesse]
 
-
-# Todo
-- Unit test module (vitest)
-- cypress
-- vuei18n
-- PWA

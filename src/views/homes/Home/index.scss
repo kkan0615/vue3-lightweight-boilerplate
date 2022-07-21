@@ -1,0 +1,20 @@
+.home-container {
+  @apply tw-h-screen;
+
+  &-content {
+    max-width: 1200px;
+    @apply tw-mx-auto tw-px-20 tw-py-32 tw-text-center;
+
+    &__logo {
+      @apply tw-flex tw-justify-center tw-mb-2;
+    }
+
+    &__title {
+      @apply tw-text-6xl tw-capitalize tw-mb-2;
+    }
+
+    &-introduction-grid {
+      @apply tw-grid tw-grid-cols-3 tw-space-x-2 tw-text-left;
+    }
+  }
+}
