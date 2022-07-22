@@ -10,20 +10,22 @@ export default defineConfig({
       reactivityTransform: false
     }),
     VitePWA({
+      registerType: 'autoUpdate',
+      includeAssets: ['favicon.ico'],
       devOptions: {
         enabled: true,
       },
       manifest: {
         name: 'vue3-boilerplate',
         short_name: 'boilerplate',
-        start_url: './',
+        start_url: '/',
         description: 'boilerplate!',
         theme_color: '#41B883',
         display: 'standalone',
         icons: [
           {
-            src: './favicon.ico',
-            sizes: '32x32',
+            src: './logo.png',
+            sizes: '200x200',
           },
         ]
       },
