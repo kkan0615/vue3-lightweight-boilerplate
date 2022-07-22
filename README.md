@@ -1,4 +1,5 @@
-# vue 3 + Typescript + Vite 3.0
+# vue 3 + Typescript + Vite 3.0 Boilerplate
+Quick starter pack for Vue 3
 
 # Tack stack
 - Vue 3
@@ -6,11 +7,12 @@
 - Vite 3.0
 
 # libraries
-- vue-router-v4
-- pinia
-- vue-i18n
-- eslint
+- [vue-router-v4](https://router.vuejs.org/)
+- [pinia](https://pinia.vuejs.org/)
+- [vue-i18n](https://kazupon.github.io/vue-i18n/)
+- [Vite Pwa plugin](https://vite-plugin-pwa.netlify.app/)
 - sass/scss
+- eslint
 
 ## Considerable libraries
 - [vue-use](https://github.com/antfu/vueuse): Provide useful utilities in vue 
@@ -32,6 +34,11 @@ yarn build
 | key                 | value | Description                                                                                                             |
 |---------------------|-------|-------------------------------------------------------------------------------------------------------------------------|
 | reactivityTransform | false | Because of errors in typescript, Do change it true <br>[link](https://vuejs.org/guide/extras/reactivity-transform.html) |
+
+## Vite PWA
+| key   | value             | Description |
+|-------|-------------------|-------------|
+| name  | Vue3-boilerplate  | Name of app |
 
 # Directory Structure
 ```
@@ -74,5 +81,5 @@ yarn build
 ```
 
 # Refs
-- (vitesse)[https://github.com/antfu/vitesse]
+- [vitesse](https://github.com/antfu/vitesse)
 
