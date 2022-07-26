@@ -1,13 +1,24 @@
 <template>
   <div>
+    <button
+      @click="onClickTestBtn"
+    >
+      {{ settingStore.Lang }}
+    </button>
     <router-view />
   </div>
 </template>
 <script setup lang="ts">
-import { initTheme } from '@/utils/theme'
+import useSettingStore from '@/store/modules/setting'
 
-/* Initialize theme (dark or light) */
-initTheme()
+const settingStore = useSettingStore()
+
+/* Initialize Setting */
+settingStore.initSetting()
+
+const onClickTestBtn = () => {
+  settingStore.setLang(settingStore.Lang === 'ko' ? 'en' : 'ko')
+}
 </script>
 <style>
 </style>
