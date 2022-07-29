@@ -22,11 +22,21 @@ Quick starter pack for Vue 3
 # Getting Started
 ## Dev
 ```shell
+npm dev
 yarn dev
+pnpm dev
 ```
 ## Build
 ```shell
+npm build
 yarn build
+pnpm build
+```
+## UnitTest
+```
+npm test
+yarn test
+pnpm test
 ```
 
 # Default settings
@@ -43,6 +53,7 @@ yarn build
 # Directory Structure
 ```
 ├─ node_modules/
+├─ config/                      # Contians config files for project
 ├─ public/
 ├─ scripts/                     # Scripts Collection
 ├─ src/
@@ -63,6 +74,7 @@ yarn build
 │  ├─ views/                    # Contain View pages.
 │  ├─ main.ts                   # vue3 main file.
 │  ├─ App.vue                   # App.vue.
+├─ tests/                         # Contains test files
 ├─ index.html                   # Index html.
 ├─ .gitignore                   # gitignore.
 ├─ vite.config.ts               # Vite confige.
@@ -82,4 +94,5 @@ yarn build
 
 # Refs
 - [vitesse](https://github.com/antfu/vitesse)
+- [vueye](https://github.com/boussadjra/vueye/blob/main/vite.config.ts)
 
