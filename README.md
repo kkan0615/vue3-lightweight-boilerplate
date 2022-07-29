@@ -22,21 +22,20 @@ Quick starter pack for Vue 3
 # Getting Started
 ## Dev
 ```shell
-npm dev
 yarn dev
-pnpm dev
 ```
 ## Build
 ```shell
-npm build
 yarn build
-pnpm build
 ```
-## UnitTest
+## Unit Test
 ```
-npm test
 yarn test
-pnpm test
+```
+
+## Unit test with ui
+```
+yarn test:ui
 ```
 
 # Default settings

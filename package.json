@@ -6,7 +6,8 @@
     "dev": "vite",
     "build": "vue-tsc --noEmit && vite build",
     "preview": "vite preview",
-    "test": "vitest"
+    "test": "vitest",
+    "test:ui": "vitest --ui"
   },
   "dependencies": {
     "pinia": "^2.0.15",
@@ -19,6 +20,8 @@
     "@types/node": "^18.0.3",
     "@typescript-eslint/parser": "^5.27.1",
     "@vitejs/plugin-vue": "^2.3.3",
+    "@vitest/ui": "^0.19.1",
+    "@vue/test-utils": "^2.0.2",
     "autoprefixer": "^10.4.7",
     "eslint": "^8.17.0",
     "eslint-plugin-vue": "^9.1.0",
