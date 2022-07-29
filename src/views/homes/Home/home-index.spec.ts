@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest'
-import { mount, shallowMount } from '@vue/test-utils'
+import { mount } from '@vue/test-utils'
 import HomeIndex from './index.vue'
 import i18n from '@/locales'
 
