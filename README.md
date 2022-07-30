@@ -1,28 +1,30 @@
 # vue 3 + Typescript + Vite 3.0 Boilerplate
-Quick starter pack for Vue 3
+Light weight and quick starter Pack
 
-# Tack stack
+# :newspaper: Tack stack
 - Vue 3
 - Typescript
 - Vite 3.0
 
-# libraries
+# :orange_book: libraries
 - sass/scss
 - eslint
+- [vitest](): Unit test with vite
+- Cypress: E2E test
 
 ## Vue Plugins
-- [vue-router-v4](https://router.vuejs.org/)
-- [pinia](https://pinia.vuejs.org/)
-- [vue-i18n](https://kazupon.github.io/vue-i18n/)
-- [Vite Pwa plugin](https://vite-plugin-pwa.netlify.app/)
-
-## Considerable libraries
-- [vue-use](https://github.com/antfu/vueuse): Provide useful utilities in vue 
-- [vite-plugin-pages](https://github.com/hannoeru/vite-plugin-pages): File based pages
-- [unplugin-vue-components](https://github.com/antfu/unplugin-vue-components): Auto add components globally
+- [vue-router-v4](https://router.vuejs.org/): Route system
+- [pinia](https://pinia.vuejs.org/): State management
+- [vue-i18n](https://kazupon.github.io/vue-i18n/): Internationalization
+- [Vite Pwa plugin](https://vite-plugin-pwa.netlify.app/): PWA
+- [vue-use](https://github.com/antfu/vueuse): Provide useful utilities to vue project
 - 
+## Considerable libraries
+- [vite-plugin-pages](https://github.com/hannoeru/vite-plugin-pages): File based pages
+- [unplugin-vue-components](https://github.com/antfu/unplugin-vue-components): make components to global component automatically 
+- [animate.css](): class based animation collection
 
-# Getting Started
+# :rocket: Getting Started
 ## Dev
 ```shell
 yarn dev
@@ -35,13 +37,16 @@ yarn build
 ```
 yarn test
 ```
-
 ## Unit test with ui
 ```
 yarn test:ui
 ```
+## E2E test
+```
+yarn test:e2e
+```
 
-# Default settings
+# :hammer: Default settings
 ## Vite
 | key                 | value | Description                                                                                                             |
 |---------------------|-------|-------------------------------------------------------------------------------------------------------------------------|
@@ -52,7 +57,7 @@ yarn test:ui
 |-------|-------------------|-------------|
 | name  | Vue3-boilerplate  | Name of app |
 
-# Directory Structure
+# :file_folder: Directory Structure
 ```
 ├─ node_modules/
 ├─ config/                      # Contians config files for project
@@ -76,10 +81,11 @@ yarn test:ui
 │  ├─ views/                    # Contain View pages.
 │  ├─ main.ts                   # vue3 main file.
 │  ├─ App.vue                   # App.vue.
-├─ tests/                         # Contains test files
+├─ tests/                       # Contains test files
 ├─ index.html                   # Index html.
 ├─ .gitignore                   # gitignore.
-├─ vite.config.ts               # Vite confige.
+├─ vite.config.ts               # Vite config.
+├─ vitest.config.ts             # Contain Vite config.
 ├─ tsconfig.json                # Specific TypeScript config.
 ├─ .eslintrc.js                 # Eslint.
 ├─ package.json 
@@ -94,7 +100,7 @@ yarn test:ui
 ├─ WhatEverName/                # WhatEverName link page
 ```
 
-# Refs
+# :postbox: Refs
 - [vitesse](https://github.com/antfu/vitesse)
 - [vueye](https://github.com/boussadjra/vueye)
 
