@@ -18,6 +18,9 @@
       >
         {{ i8n.t('Views.Home.Title') }}
       </h1>
+      <div>
+        <use-dark-btn />
+      </div>
       <div
         class="home-container-content-introduction-grid"
       >
@@ -52,6 +55,7 @@ export default {
 </script>
 <script setup lang="ts">
 import { useI18n } from 'vue-i18n'
+import UseDarkBtn from '@/components/buttons/UseDark/index.vue'
 
 const i8n = useI18n()
 </script>

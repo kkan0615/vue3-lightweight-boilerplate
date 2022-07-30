@@ -10,6 +10,7 @@
     "test:ui": "vitest --ui"
   },
   "dependencies": {
+    "@vueuse/core": "^9.0.2",
     "pinia": "^2.0.15",
     "sass": "^1.52.3",
     "vue": "^3.2.25",

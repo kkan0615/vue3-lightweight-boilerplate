@@ -2,5 +2,6 @@
 
 body, html {
   margin: 0;
-  @apply tw-font-roboto
+  transition: background 0.2s linear; /* Dark mode transition */
+  @apply tw-font-roboto dark:tw-bg-zinc-900 dark:tw-text-white;
 }

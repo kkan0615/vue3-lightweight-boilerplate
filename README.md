@@ -7,17 +7,20 @@ Quick starter pack for Vue 3
 - Vite 3.0
 
 # libraries
+- sass/scss
+- eslint
+
+## Vue Plugins
 - [vue-router-v4](https://router.vuejs.org/)
 - [pinia](https://pinia.vuejs.org/)
 - [vue-i18n](https://kazupon.github.io/vue-i18n/)
 - [Vite Pwa plugin](https://vite-plugin-pwa.netlify.app/)
-- sass/scss
-- eslint
 
 ## Considerable libraries
 - [vue-use](https://github.com/antfu/vueuse): Provide useful utilities in vue 
 - [vite-plugin-pages](https://github.com/hannoeru/vite-plugin-pages): File based pages
 - [unplugin-vue-components](https://github.com/antfu/unplugin-vue-components): Auto add components globally
+- 
 
 # Getting Started
 ## Dev
@@ -93,5 +96,5 @@ yarn test:ui
 
 # Refs
 - [vitesse](https://github.com/antfu/vitesse)
-- [vueye](https://github.com/boussadjra/vueye/blob/main/vite.config.ts)
+- [vueye](https://github.com/boussadjra/vueye)
 

@@ -1,7 +1,9 @@
-/**
- * System Theme
- */
-export type Theme = 'dark' | 'light'
+import { UseDarkOptions } from '@vueuse/core'
+
+export const useDarkOption: UseDarkOptions = {
+  selector: 'html',
+  valueDark: 'tw-dark',
+}
 
 /**
  * Lang code table: http://www.lingoes.net/en/translator/langcode.htm
