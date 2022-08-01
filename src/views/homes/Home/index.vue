@@ -56,8 +56,21 @@ export default {
 <script setup lang="ts">
 import { useI18n } from 'vue-i18n'
 import UseDarkBtn from '@/components/buttons/UseDark/index.vue'
+import { useHead } from '@vueuse/head'
 
 const i8n = useI18n()
+
+/* Change head */
+useHead({
+  // Can be static or computed
+  title: 'Vite app - Home',
+  meta: [
+    {
+      name: 'description',
+      content: 'Home page at Vite app',
+    },
+  ],
+})
 </script>
 <style
   lang="scss"

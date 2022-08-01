@@ -18,7 +18,8 @@ Light weight and quick starter Pack
 - [vue-i18n](https://kazupon.github.io/vue-i18n/): Internationalization
 - [Vite Pwa plugin](https://vite-plugin-pwa.netlify.app/): PWA
 - [vue-use](https://github.com/antfu/vueuse): Provide useful utilities to vue project
-- 
+- [vueuse/head](https://github.com/vueuse/head): head meta
+
 ## Considerable libraries
 - [vite-plugin-pages](https://github.com/hannoeru/vite-plugin-pages): File based pages
 - [unplugin-vue-components](https://github.com/antfu/unplugin-vue-components): make components to global component automatically 
@@ -99,6 +100,12 @@ yarn test:e2e
 ├─ Home/                        # index page.
 ├─ WhatEverName/                # WhatEverName link page
 ```
+
+# Before start
+## Remove
+- views/examples
+- router/routes
+- "exampleRoutes" in index.ts router folder
 
 # :postbox: Refs
 - [vitesse](https://github.com/antfu/vitesse)
