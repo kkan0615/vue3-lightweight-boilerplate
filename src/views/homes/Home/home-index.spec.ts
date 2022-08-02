@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest'
-import { mount } from '@vue/test-utils'
+import { shallowMount } from '@vue/test-utils'
 import HomeIndex from './index.vue'
 import i18n from '@/locales'
 import { createHead } from '@vueuse/head'
@@ -7,7 +7,7 @@ import { createHead } from '@vueuse/head'
 describe('Home Index.vue', () => {
   const head = createHead()
 
-  const wrapper = mount(HomeIndex, {
+  const wrapper = shallowMount(HomeIndex, {
     global: {
       plugins: [i18n, head],
     },
