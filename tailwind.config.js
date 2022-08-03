@@ -6,6 +6,7 @@ module.exports = {
     './index.html',
     './src/**/*.{vue,js,ts,jsx,tsx}',
   ],
+  important: true,
   prefix: 'tw-',
   theme: {
     extend: {
@@ -108,6 +109,9 @@ module.exports = {
           }
         }, // secondary ends
       }, // colors end
+      maxWidth: {
+        'content': '1200px',
+      }, // maxWidth ends
     },
   },
   plugins: [],

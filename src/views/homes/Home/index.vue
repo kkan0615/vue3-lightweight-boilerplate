@@ -3,7 +3,7 @@
     class="home-container"
   >
     <div
-      class="home-container-content"
+      class="home-container-content page-content"
     >
       <div
         class="home-container-content__logo"

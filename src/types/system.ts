@@ -1,8 +1,11 @@
 import { UseDarkOptions } from '@vueuse/core'
 
+/**
+ * dark option parameter in vueuse plugin
+ */
 export const useDarkOption: UseDarkOptions = {
-  selector: 'html',
-  valueDark: 'tw-dark',
+  selector: 'html', // Add at HTML
+  valueDark: 'tw-dark', // This project uses prefix "tw-"
 }
 
 /**

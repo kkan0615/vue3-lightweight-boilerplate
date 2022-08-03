@@ -18,9 +18,9 @@ Light weight and quick starter Pack
 - [vue-i18n](https://kazupon.github.io/vue-i18n/): Internationalization
 - [Vite Pwa plugin](https://vite-plugin-pwa.netlify.app/): PWA
 - [vue-use](https://github.com/antfu/vueuse): Provide useful utilities to vue project
-- [vueuse/head](https://github.com/vueuse/head): head meta
+- [vueuse/head](https://github.com/vueuse/head): Control head meta
 
-## Considerable libraries
+## Considerable(recommended) libraries
 - [vite-plugin-pages](https://github.com/hannoeru/vite-plugin-pages): File based pages
 - [unplugin-vue-components](https://github.com/antfu/unplugin-vue-components): make components to global component automatically 
 - [animate.css](): class based animation collection
@@ -58,12 +58,20 @@ yarn test:e2e
 |-------|-------------------|-------------|
 | name  | Vue3-boilerplate  | Name of app |
 
+## Tailwind
+| key       | value | Description                               |
+|-----------|-------|-------------------------------------------|
+| darkmode  | class | Add class "tw-dark" to HTML for dark mode |
+| prefix    | tw-   | Add "tw-" as prefix (tw-bg-red-500)       |
+| important | True  | Make all tailwind with !important         |
+
 # :file_folder: Directory Structure
 ```
 ├─ node_modules/
 ├─ config/                      # Contians config files for project
+├─ cypress/                     # Contians cypress test files
 ├─ public/
-├─ scripts/                     # Scripts Collection
+├─ scripts/                     # Contains script files
 ├─ src/
 │  ├─ assets/                   # Assets for renderer.
 │  ├─ components/               # Contain global components.
@@ -77,7 +85,8 @@ yarn test:e2e
 │  │   ├─ modules/              # Modulized store.
 │  │   ├─ index.ts/             # store config.
 │  ├─ styles/                   # Global Styles.
-│  ├─ types/                    # Types.
+│  │   ├─ libs/                 # Contains styles for libraries 
+│  ├─ types/                    # Contains types.
 │  ├─ utils/                    # Contain utilites.
 │  ├─ views/                    # Contain View pages.
 │  ├─ main.ts                   # vue3 main file.
@@ -86,7 +95,7 @@ yarn test:e2e
 ├─ index.html                   # Index html.
 ├─ .gitignore                   # gitignore.
 ├─ vite.config.ts               # Vite config.
-├─ vitest.config.ts             # Contain Vite config.
+├─ vitest.config.ts             # Vitest config.
 ├─ tsconfig.json                # Specific TypeScript config.
 ├─ .eslintrc.js                 # Eslint.
 ├─ package.json 
@@ -101,7 +110,7 @@ yarn test:e2e
 ├─ WhatEverName/                # WhatEverName link page
 ```
 
-# Before start
+# :tada: Before start
 ## Remove
 - views/examples
 - router/routes

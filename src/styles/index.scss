@@ -4,3 +4,7 @@ body, html {
   margin: 0;
   @apply tw-font-roboto dark:tw-bg-zinc-900 dark:tw-text-white;
 }
+
+.page-content {
+  @apply tw-mx-auto tw-max-w-content;
+}
