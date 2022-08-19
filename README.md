@@ -11,6 +11,8 @@ Light weight and quick starter Pack
 - eslint
 - [vitest](): Unit test with vite
 - Cypress: E2E test
+- Husky
+- lint-staged
 
 ## Vue Plugins
 - [vue-router-v4](https://router.vuejs.org/): Route system
