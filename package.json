@@ -12,7 +12,7 @@
     "eslint:fix": "eslint --fix"
   },
   "lint-staged": {
-    "src/**/*.{ts,css,html}": [
+    "src/**/*.{ts,css,html,vue}": [
       "yarn run eslint:fix",
       "git add"
     ]
