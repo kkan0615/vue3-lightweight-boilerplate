@@ -54,6 +54,12 @@ yarn test:ui
 ```
 yarn test:e2e
 ```
+## Husky command
+### Add stage
+```
+# Example
+husky add .husky/pre-commit "yarn sth"
+```
 
 # :hammer: Default settings
 ## Vite
