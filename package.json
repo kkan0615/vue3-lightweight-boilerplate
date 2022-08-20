@@ -7,22 +7,11 @@
     "build": "vue-tsc --noEmit && vite build",
     "preview": "vite preview",
     "test": "vitest",
+    "test:once": "vitest run",
     "test:ui": "vitest --ui",
     "test:e2e": "cypress open",
     "eslint:fix": "eslint --fix",
     "prepare": "husky install"
-  },
-  "lint-staged": {
-    "src/**/*.{ts,css,html,vue}": [
-      "yarn run eslint:fix",
-      "git add"
-    ]
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged",
-      "pre-push": "yarn run test"
-    }
   },
   "dependencies": {
     "@vueuse/core": "^9.0.2",

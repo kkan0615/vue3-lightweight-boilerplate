@@ -1,13 +1,13 @@
 <template>
   <div>
-    <router-view />
+    <router-view
+    />
   </div>
 </template>
 <script setup lang="ts">
 import useSettingStore from '@/store/modules/setting'
 import { useDark } from '@vueuse/core'
 import { useDarkOption } from '@/types/system'
-
 const settingStore = useSettingStore()
 
 /* Initialize Setting */
