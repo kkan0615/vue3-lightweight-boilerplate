@@ -1,8 +1,6 @@
 import { defineStore } from 'pinia'
-import { DEFAULT_LANG, SupportedLang, Theme } from '@/types/system'
-import { getTheme, initTheme, setTheme } from '@/utils/theme'
+import { DEFAULT_LANG, SupportedLang } from '@/types/system'
 import { getShortLang, getSystemLang, setLang } from '@/utils/lang'
-import { useI18n } from 'vue-i18n'
 import i18n from '@/locales'
 
 export interface SettingState {

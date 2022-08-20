@@ -5,3 +5,7 @@ public
 dist
 dev-dist
 postcss.config.js
+**/*.json
+**/*.scss
+**/*.md
+yarn.lock
