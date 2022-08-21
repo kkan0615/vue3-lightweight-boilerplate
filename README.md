@@ -11,10 +11,11 @@ Light weight and quick starter Pack
 
 # :orange_book: libraries
 - sass/scss
+- [Tailwind]('https://tailwindcss.com/')
 - eslint
 - [vitest](): Unit test with vite
 - Cypress: E2E test
-- Husky
+- [Husky 8]('https://github.com/typicode/husky')
 
 ## Vue Plugins
 - [vue-router-v4](https://router.vuejs.org/): Route system
@@ -54,12 +55,6 @@ yarn test:ui
 ```
 yarn test:e2e
 ```
-## Husky command
-### Add stage
-```
-# Example
-husky add .husky/pre-commit "yarn sth"
-```
 
 # :hammer: Default settings
 ## Vite
@@ -78,31 +73,47 @@ husky add .husky/pre-commit "yarn sth"
 | darkmode  | class | Add class "tw-dark" to HTML for dark mode |
 | prefix    | tw-   | Add "tw-" as prefix (tw-bg-red-500)       |
 | important | True  | Make all tailwind with !important         |
+### Color config
+| key       | Description           |
+|-----------|-----------------------|
+| main      | main color for target |
+| 100 ~ 900 | color stream          |
+| text      | text color for target |
+### Brand Colors
+| key       | Description                          |
+|-----------|--------------------------------------|
+| primary   | primary                              |
+| secondary | secondary                            |
+| accent    | accent                               |
+| positive  | use it for positive or success       |
+| negative  | use it for negative, danger or error |
+| info      | use if for information               |
+| warning   | use if for warning                   |
 
 # :file_folder: Directory Structure
-```
+```text
 ├─ node_modules/
 ├─ .husky                       # Contains husky config
-├─ config/                      # Contians config files for project
-├─ cypress/                     # Contians cypress test files
+├─ config/                      # Contains config files for project
+├─ cypress/                     # Contains cypress test files
 ├─ public/
 ├─ scripts/                     # Contains script files
 ├─ src/
 │  ├─ assets/                   # Assets for renderer.
 │  ├─ components/               # Contain global components.
-│  ├─ locales/                  # i18n, locaels.
-│  │   ├─ langs/                # Lanuges collection.
+│  ├─ locales/                  # i18n, locales.
+│  │   ├─ langs/                # supported language collection.
 │  │   ├─ index.ts/             # i18n config.
 │  ├─ router/                   # Router.
-│  │   ├─ routes/               # Modulized routes.
+│  │   ├─ routes/               # Modularized routes.
 │  │   ├─ index.ts/             # router config.
 │  ├─ store/                    # Pinina or vue-store.
-│  │   ├─ modules/              # Modulized store.
+│  │   ├─ modules/              # Modularized store.
 │  │   ├─ index.ts/             # store config.
 │  ├─ styles/                   # Global Styles.
 │  │   ├─ libs/                 # Contains styles for libraries 
 │  ├─ types/                    # Contains types.
-│  ├─ utils/                    # Contain utilites.
+│  ├─ utils/                    # Contain utilities.
 │  ├─ views/                    # Contain View pages.
 │  ├─ main.ts                   # vue3 main file.
 │  ├─ App.vue                   # App.vue.

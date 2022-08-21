@@ -1,8 +1,9 @@
 @import "./libs";
+@import "./font.scss";
 
 body, html {
   margin: 0;
-  @apply tw-font-roboto dark:tw-bg-zinc-900 dark:tw-text-white;
+  @apply tw-font-roboto dark:tw-bg-background-main-dark dark:tw-text-background-text-dark;
 }
 
 .page-content {

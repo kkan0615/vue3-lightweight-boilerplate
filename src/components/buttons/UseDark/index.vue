@@ -28,6 +28,6 @@ const onClickToggleDarkBtn = () => {
 >
 .use-dark-btn {
   transition: background 0.3s linear;
-  @apply tw-bg-primary-500 tw-px-4 tw-py-2 tw-rounded tw-text-white hover:tw-bg-gray-500;
+  @apply tw-bg-primary-main tw-px-4 tw-py-2 tw-text-primary-text tw-rounded hover:tw-bg-gray-500;
 }
 </style>
