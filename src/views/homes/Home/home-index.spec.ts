@@ -17,6 +17,7 @@ describe('Home Index.vue', () => {
     const cmp = await import('./index.vue')
     expect(cmp).toBeDefined()
   })
+
   it('it should render', () => {
     expect(HomeIndex).toBeTruthy()
     // Logo are defined
