@@ -1,5 +1,5 @@
 # vue 3 + Typescript + Vite 3.0 Boilerplate
-Light weight and quick starter Pack
+Lightweight and quick starter Pack
 
 # :bulb: Requirement
 - Over node 16
@@ -16,6 +16,9 @@ Light weight and quick starter Pack
 - [vitest](): Unit test with vite
 - Cypress: E2E test
 - [Husky 8]('https://github.com/typicode/husky')
+- [carbon icons]('https://carbondesignsystem.com/guidelines/icons/library/'): Icons
+## CDN 
+- [material icon]('https://fonts.google.com/icons): Icons
 
 ## Vue Plugins
 - [vue-router-v4](https://router.vuejs.org/): Route system

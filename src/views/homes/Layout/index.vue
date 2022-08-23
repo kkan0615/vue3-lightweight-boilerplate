@@ -1,5 +1,12 @@
 <template>
-  <router-view />
+  <div>
+    <router-view />
+    <div
+      class="footer page-content"
+    >
+      <use-dark-btn />
+    </div>
+  </div>
 </template>
 <script lang="ts">
 export default {
@@ -7,5 +14,11 @@ export default {
 }
 </script>
 <script setup lang="ts">
-import { ref } from 'vue'
+import UseDarkBtn from '@/components/buttons/UseDark/index.vue'
 </script>
+<style
+  scoped
+  lang="scss"
+>
+@import "./index";
+</style>

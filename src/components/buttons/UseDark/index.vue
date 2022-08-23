@@ -3,7 +3,20 @@
     class="use-dark-btn"
     @click="onClickToggleDarkBtn"
   >
-    {{ isDark ? 'Dark' : 'Light' }}
+    <!-- Dark mode -->
+    <span
+      v-if="isDark"
+      class="material-symbols-outlined"
+    >
+      dark_mode
+    </span>
+    <!-- Light mode -->
+    <span
+      v-else
+      class="material-symbols-outlined"
+    >
+      light_mode
+    </span>
   </button>
 </template>
 <script lang="ts">
@@ -27,7 +40,11 @@ const onClickToggleDarkBtn = () => {
   lang="scss"
 >
 .use-dark-btn {
-  transition: background 0.3s linear;
-  @apply tw-bg-primary-main tw-px-4 tw-py-2 tw-text-primary-text tw-rounded hover:tw-bg-gray-500;
+  @apply tw-inline-flex;
+
+  span {
+    transition: background 0.3s linear;
+    @apply dark:tw-text-background-text-dark hover:tw-text-gray-500;
+  }
 }
 </style>

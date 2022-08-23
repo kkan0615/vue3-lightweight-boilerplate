@@ -9,3 +9,27 @@ body, html {
 .page-content {
   @apply tw-mx-auto tw-max-w-content;
 }
+
+h1 {
+  @apply tw-text-7xl;
+}
+
+h2 {
+  @apply tw-text-6xl;
+}
+
+h3 {
+  @apply tw-text-5xl;
+}
+
+h4 {
+  @apply tw-text-4xl;
+}
+
+h5 {
+  @apply tw-text-3xl;
+}
+
+h6 {
+  @apply tw-text-xl;
+}

@@ -1,5 +1,5 @@
 const enDictionary = {
-  Commons: {
+  commons: {
     Tooltips: {
       search: 'search',
       edit: 'edit',
@@ -64,11 +64,32 @@ const enDictionary = {
   },
   Types: {
     Models: {
+      Views: {
+        Features: {
+          Vite: {
+            title: 'Vite 3.0',
+            content: 'Use new version of vite',
+          },
+          Localization: {
+            title: 'localize with "i18n"',
+            content: 'Use vue-i18n plugin to control i18n based on TS file',
+          },
+          Pinia: {
+            title: 'State management tool "Pinia"',
+            content: 'Manage your state with pinia',
+          },
+          Develop: {
+            title: 'Develop environments are ready',
+            content: 'eslint, cypress, vitest, husky 8 etc ...',
+          }
+        }
+      }
     },
   },
   Views: {
     Home: {
       Title: 'home',
+      projectName: 'vue 3 lightweight'
     },
   }
 }

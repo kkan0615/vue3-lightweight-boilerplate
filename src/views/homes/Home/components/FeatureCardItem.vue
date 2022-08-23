@@ -1,9 +1,13 @@
 <template>
-  <router-view />
+  <div
+    class="tw-flex-grow"
+  >
+    <slot />
+  </div>
 </template>
 <script lang="ts">
 export default {
-  name: 'ExampleLayout',
+  name: 'FeatureCardItem',
 }
 </script>
 <script setup lang="ts">
