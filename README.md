@@ -151,3 +151,10 @@ yarn test:e2e
 - [vueye](https://github.com/boussadjra/vueye)
 - [vue2-admin-template](https://github.com/PanJiaChen/vue-element-admin)
 
+# TODO
+- Home page
+  - Feature 
+  - About
+- Simple Example pages
+- i18n for footer
+- Documentation
