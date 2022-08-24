@@ -15,7 +15,7 @@
         >
       </div>
       <h6>
-        {{ i8n.t('Views.Home.projectName') }}
+        {{ i18n.t('Views.Home.projectName') }}
       </h6>
       <div
         class="home-container-button-container"
@@ -36,15 +36,29 @@
           </button>
         </a>
       </div>
+      <!-- Electron version link -->
+      <a
+        target="_blank"
+        href="https://github.com/kkan0615/vue3-typescript-electron-boilerplate"
+        class="electron-link tw-mt-3"
+      >
+        <span>
+          Electron version
+        </span>
+        <span class="material-symbols-outlined">
+          arrow_forward
+        </span>
+      </a>
     </div>
+
     <!-- Feature -->
     <div
       class="page-content"
     >
       <h6
-        class="dark:tw-text-gray-400 tw-text-gray-600 tw-mb-2"
+        class="dark:tw-text-gray-400 tw-text-gray-600 tw-mb-2 tw-capitalize"
       >
-        Feature
+        {{ i18n.t('Types.Models.Views.Features.title') }}
       </h6>
       <div
         class="tw-grid tw-grid-cols-2 tw-gap-8"
@@ -85,7 +99,7 @@ import FeatureCardItem from '@/views/homes/Home/components/FeatureCardItem.vue'
 import FeatureCardHeader from '@/views/homes/Home/components/FeatureCardHeader.vue'
 import FeatureCardBody from '@/views/homes/Home/components/FeatureCardBody.vue'
 
-const i8n = useI18n()
+const i18n = useI18n()
 
 /* Change head */
 useHead({

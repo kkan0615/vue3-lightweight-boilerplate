@@ -66,6 +66,7 @@ const enDictionary = {
     Models: {
       Views: {
         Features: {
+          title: 'features',
           Vite: {
             title: 'Vite 3.0',
             content: 'Use new version of vite',
@@ -81,6 +82,14 @@ const enDictionary = {
           Develop: {
             title: 'Develop environments are ready',
             content: 'eslint, cypress, vitest, husky 8 etc ...',
+          },
+          PWA: {
+            title: 'PWA, Progressive Web Application',
+            content: 'vite-PWA plugin is installed with config',
+          },
+          Style: {
+            title: 'Styles libraries ',
+            content: 'sass/scss, tailwind and material icons',
           }
         }
       }

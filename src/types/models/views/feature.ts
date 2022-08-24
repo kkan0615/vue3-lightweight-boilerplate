@@ -29,8 +29,20 @@ export const featureList: Feature[] = [
   },
   {
     id: 4,
+    icon: 'install_mobile',
+    title: i18n.global.t('Types.Models.Views.Features.PWA.title'),
+    content: i18n.global.t('Types.Models.Views.Features.PWA.content')
+  },
+  {
+    id: 5,
     icon: 'construction',
     title: i18n.global.t('Types.Models.Views.Features.Develop.title'),
     content: i18n.global.t('Types.Models.Views.Features.Develop.content')
-  }
+  },
+  {
+    id: 6,
+    icon: 'imagesearch_roller',
+    title: i18n.global.t('Types.Models.Views.Features.Style.title'),
+    content: i18n.global.t('Types.Models.Views.Features.Style.content')
+  },
 ]
