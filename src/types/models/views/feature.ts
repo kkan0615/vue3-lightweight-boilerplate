@@ -7,6 +7,9 @@ export interface Feature {
   content: string
 }
 
+/**
+ * Feature list for home
+ */
 export const featureList: Feature[] = [
   // Vite
   {

@@ -91,8 +91,8 @@ export default {
 <script setup lang="ts">
 import { useI18n } from 'vue-i18n'
 import { useHead } from '@vueuse/head'
-import GithubIcon from '@/components/icons/github.vue'
 import { featureList } from '@/types/models/views/feature'
+import GithubIcon from '@/components/icons/Github.vue'
 import FeatureCard from '@/views/homes/Home/components/FeatureCard.vue'
 import FeatureCardIcon from '@/views/homes/Home/components/FeatureCardIcon.vue'
 import FeatureCardItem from '@/views/homes/Home/components/FeatureCardItem.vue'
