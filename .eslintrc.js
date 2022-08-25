@@ -12,6 +12,9 @@ module.exports = {
   globals: {
     'NodeJS': true,
   },
+  env: {
+    'node': true,
+  },
   rules: {
     // For Coding
     'quotes': ['error', 'single'], // "" => ''

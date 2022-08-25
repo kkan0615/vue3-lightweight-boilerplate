@@ -1,9 +1,10 @@
-import { fileURLToPath, URL } from 'url'
+import { resolve } from 'path'
 import { AliasOptions } from 'vite'
 
-const alias: AliasOptions = [{
-  find: '@',
-  replacement: fileURLToPath(new URL('../src', import.meta.url)),
-}]
+const r = (p: string) => resolve(__dirname, p)
+
+const alias: AliasOptions = {
+  '@': r('./src'),
+}
 
 export default alias
