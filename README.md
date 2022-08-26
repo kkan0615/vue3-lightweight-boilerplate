@@ -11,12 +11,12 @@ Lightweight and quick starter Pack
 
 # :orange_book: libraries
 - sass/scss
-- [Tailwind]('https://tailwindcss.com/')
+- [Tailwind](https://tailwindcss.com/)
 - eslint
 - [vitest](): Unit test with vite
 - Cypress: E2E test
-- [Husky 8]('https://github.com/typicode/husky')
-- [carbon icons]('https://carbondesignsystem.com/guidelines/icons/library/'): Icons
+- [Husky 8](https://github.com/typicode/husky)
+- [carbon icons](https://carbondesignsystem.com/guidelines/icons/library/): Icons
 ## CDN 
 - [material icon]('https://fonts.google.com/icons): Icons
 
