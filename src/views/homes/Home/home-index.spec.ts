@@ -22,6 +22,11 @@ describe('Home Index.vue', () => {
     expect(HomeIndex).toBeTruthy()
     // Logo are defined
     const logoImgEl = wrapper.find('img[alt="logo"]')
-    expect(logoImgEl).toBeDefined()
+    expect(logoImgEl.exists()).toBeTruthy()
+  })
+
+  it('find github link', () => {
+    const githubLinkEl = wrapper.find('#github-link')
+    expect(githubLinkEl.exists()).toBeTruthy()
   })
 })

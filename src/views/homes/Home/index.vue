@@ -21,6 +21,7 @@
         class="home-container-button-container"
       >
         <a
+          id="github-link"
           target="_blank"
           href="https://github.com/kkan0615/vue3-lightweight-boilerplate"
         >
