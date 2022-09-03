@@ -1,4 +1,5 @@
 const enDictionary = {
+  hello: 'Hello!',
   commons: {
     Tooltips: {
       search: 'search',
@@ -90,6 +91,13 @@ const enDictionary = {
           Style: {
             title: 'Styles libraries ',
             content: 'sass/scss, tailwind and material icons',
+          }
+        },
+        Examples: {
+          title: 'examples',
+          Links: {
+            form: 'form',
+            pinia: 'pinia'
           }
         }
       }

@@ -14,6 +14,11 @@ const exampleRoutes: RouteRecordRaw[] = [
         component: () => import('@/views/examples/Home/index.vue'),
       },
       {
+        name: 'ExampleForm',
+        path: 'form',
+        component: () => import('@/views/examples/Form/index.vue'),
+      },
+      {
         name: 'ExamplePinia',
         path: 'pinia',
         component: () => import('@/views/examples/Pinia/index.vue'),

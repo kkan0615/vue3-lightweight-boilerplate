@@ -26,6 +26,7 @@ const useSettingStore = defineStore('setting', {
     initSetting() {
       // Initialize current lang
       this.lang = getSystemLang()
+      i18n.global.locale = this.lang
     },
     /**
      * Set Language

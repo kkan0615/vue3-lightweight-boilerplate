@@ -1,4 +1,5 @@
 const koDictionary = {
+  hello: '안녕하세요!',
   Commons: {
     Tooltips: {
       search: 'search',

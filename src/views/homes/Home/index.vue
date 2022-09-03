@@ -15,7 +15,7 @@
         >
       </div>
       <h6>
-        {{ i18n.t('Views.Home.projectName') }}
+        {{ i18n.t('Views.Home.projectName') }} {{ i18n.t('hello') }}
       </h6>
       <div
         class="home-container-button-container"
@@ -80,6 +80,34 @@
             </feature-card-body>
           </feature-card-item>
         </feature-card>
+      </div>
+    </div>
+    <!-- Example links -->
+    <div
+      class="page-content tw-mt-8"
+    >
+      <h6
+        class="dark:tw-text-gray-400 tw-text-gray-600 tw-mb-2 tw-capitalize"
+      >
+        {{ i18n.t('Types.Models.Views.Examples.title') }}
+      </h6>
+      <div
+        class="tw-flex tw-space-x-4"
+      >
+        <div
+          class="example-link"
+        >
+          <router-link :to="{ name: 'ExampleForm' }">
+            {{ i18n.t('Types.Models.Views.Examples.Links.form') }}
+          </router-link>
+        </div>
+        <div
+          class="example-link"
+        >
+          <router-link to="">
+            {{ i18n.t('Types.Models.Views.Examples.Links.pinia') }}
+          </router-link>
+        </div>
       </div>
     </div>
   </div>
