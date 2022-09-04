@@ -104,7 +104,7 @@
         <div
           class="example-link"
         >
-          <router-link to="">
+          <router-link :to="{ name: 'ExamplePinia' }">
             {{ i18n.t('Types.Models.Views.Examples.Links.pinia') }}
           </router-link>
         </div>

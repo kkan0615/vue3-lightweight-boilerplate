@@ -17,6 +17,8 @@ Lightweight and quick starter Pack
 - Cypress: E2E test
 - [Husky 8](https://github.com/typicode/husky)
 - [carbon icons](https://carbondesignsystem.com/guidelines/icons/library/): Icons
+- [yup](https://www.npmjs.com/package/yup): Form Validate
+
 ## CDN 
 - [material icon]('https://fonts.google.com/icons): Icons
 
@@ -27,6 +29,8 @@ Lightweight and quick starter Pack
 - [Vite Pwa plugin](https://vite-plugin-pwa.netlify.app/): PWA
 - [vue-use](https://github.com/antfu/vueuse): Provide useful utilities to vue project
 - [vueuse/head](https://github.com/vueuse/head): Control head meta
+
+[//]: # (- [vee-validate]&#40;https://vee-validate.logaretm.com/v4/&#41;: Form Validate)
 
 ## Considerable(recommended) libraries
 - [vite-plugin-pages](https://github.com/hannoeru/vite-plugin-pages): File based pages

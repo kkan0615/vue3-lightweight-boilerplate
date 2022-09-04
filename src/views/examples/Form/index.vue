@@ -1,6 +1,6 @@
 <template>
   <div
-    class="tw-pt-32 tw-pb-24 tw-text-center page-content"
+    class="tw-text-center page-content"
   >
     <form
       @submit.prevent="handleSubmit"
