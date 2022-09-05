@@ -32,12 +32,9 @@ export default {
 }
 </script>
 <script setup lang="ts">
-import { ref } from 'vue'
 import useExampleStore from '@/store/modules/example'
 
 const exampleStore = useExampleStore()
-
-const newCount = ref(0)
 
 const onClickIncreaseBtn = () => {
   exampleStore.increaseCount()
@@ -45,11 +42,6 @@ const onClickIncreaseBtn = () => {
 
 const onClickDecreaseBtn = () => {
   exampleStore.decreaseCount()
-}
-
-const onSubmitCountForm = () => {
-  exampleStore.setCount(newCount.value)
-  newCount.value = 0
 }
 </script>
 <style

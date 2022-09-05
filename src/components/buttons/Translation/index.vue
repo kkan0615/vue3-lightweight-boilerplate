@@ -33,7 +33,6 @@ export default {
 </script>
 <script setup lang="ts">
 import { useI18n } from 'vue-i18n'
-import { useNavigatorLanguage } from '@vueuse/core'
 import { SupportedLang, supportedLangList } from '@/types/system'
 import { ref } from 'vue'
 import useSettingStore from '@/store/modules/setting'
