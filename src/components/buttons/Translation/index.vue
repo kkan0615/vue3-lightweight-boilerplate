@@ -32,12 +32,10 @@ export default {
 }
 </script>
 <script setup lang="ts">
-import { useI18n } from 'vue-i18n'
 import { SupportedLang, supportedLangList } from '@/types/system'
 import { ref } from 'vue'
 import useSettingStore from '@/store/modules/setting'
 
-const i18n = useI18n()
 const settingStore = useSettingStore()
 
 const isOpen = ref(false)
