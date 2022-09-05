@@ -4,8 +4,8 @@
     <div
       class="footer page-content"
     >
-      <use-dark-btn />
-      <translate-btn />
+      <UseDarkBtn />
+      <TranslateBtn />
     </div>
   </div>
 </template>

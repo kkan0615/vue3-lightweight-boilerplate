@@ -64,22 +64,22 @@
       <div
         class="tw-grid tw-grid-cols-2 tw-gap-8"
       >
-        <feature-card
+        <FeatureCard
           v-for="feature in featureList"
           :key="feature.id"
         >
-          <feature-card-icon>
+          <FeatureCardIcon>
             {{ feature.icon }}
-          </feature-card-icon>
-          <feature-card-item>
-            <feature-card-header>
+          </FeatureCardIcon>
+          <FeatureCardItem>
+            <FeatureCardHeader>
               {{ feature.title }}
-            </feature-card-header>
-            <feature-card-body>
+            </FeatureCardHeader>
+            <FeatureCardBody>
               {{ feature.content }}
-            </feature-card-body>
-          </feature-card-item>
-        </feature-card>
+            </FeatureCardBody>
+          </FeatureCardItem>
+        </FeatureCard>
       </div>
     </div>
     <!-- Example links -->
