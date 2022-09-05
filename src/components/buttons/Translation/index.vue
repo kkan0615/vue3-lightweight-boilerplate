@@ -7,23 +7,10 @@
     </span>
   </button>
   <Teleport to="body">
-    <div
+    <TranslateBtnDialog
       v-if="isOpen"
-      class="modal"
-    >
-      <ul>
-        <li
-          v-for="supportedLang in supportedLangList"
-          :key="supportedLang"
-          @click="changeLocale(supportedLang)"
-        >
-          {{ supportedLang }}
-        </li>
-      </ul>
-      <button @click="closeModal">
-        Close
-      </button>
-    </div>
+      @close="handleClose"
+    />
   </Teleport>
 </template>
 <script lang="ts">
@@ -32,11 +19,8 @@ export default {
 }
 </script>
 <script setup lang="ts">
-import { SupportedLang, supportedLangList } from '@/types/system'
 import { ref } from 'vue'
-import useSettingStore from '@/store/modules/setting'
-
-const settingStore = useSettingStore()
+import TranslateBtnDialog from '@/components/buttons/Translation/components/Dialog.vue'
 
 const isOpen = ref(false)
 
@@ -44,12 +28,8 @@ const onClickOpen = () => {
   isOpen.value = true
 }
 
-const closeModal = () => {
+const handleClose = () => {
   isOpen.value = false
-}
-
-const changeLocale = (lang: SupportedLang | 'preference') => {
-  settingStore.setLang(lang)
 }
 
 </script>
@@ -57,12 +37,5 @@ const changeLocale = (lang: SupportedLang | 'preference') => {
     lang="scss"
     scoped
 >
-.modal {
-  position: fixed;
-  z-index: 999;
-  top: 20%;
-  left: 50%;
-  width: 300px;
-  margin-left: -150px;
-}
+
 </style>

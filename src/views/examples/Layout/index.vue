@@ -1,13 +1,20 @@
 <template>
   <div
-    class="tw-pt-32 tw-pb-24"
+    class="example-layout"
   >
     <div
       class="page-content tw-text-center tw-mb-4"
     >
       <router-link :to="{ name: 'HomeIndex' }">
-        <div>
-          Home
+        <div
+          class="example-layout-link"
+        >
+          <span class="material-symbols-outlined">
+            home
+          </span>
+          <div>
+            Home
+          </div>
         </div>
       </router-link>
     </div>
@@ -21,3 +28,9 @@ export default {
 </script>
 <script setup lang="ts">
 </script>
+<style
+  lang="scss"
+  scoped
+>
+@import "./index.scss";
+</style>
