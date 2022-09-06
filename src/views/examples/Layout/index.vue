@@ -5,7 +5,7 @@
     <div
       class="page-content tw-text-center tw-mb-4"
     >
-      <router-link :to="{ name: 'HomeIndex' }">
+      <RouterLink :to="{ name: 'HomeIndex' }">
         <div
           class="example-layout-link"
         >
@@ -16,9 +16,9 @@
             Home
           </div>
         </div>
-      </router-link>
+      </RouterLink>
     </div>
-    <router-view />
+    <RouterView />
   </div>
 </template>
 <script lang="ts">

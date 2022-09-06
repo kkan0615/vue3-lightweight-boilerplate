@@ -6,8 +6,10 @@ module.exports = {
   },
   extends: [
     'eslint:recommended',
+    // '@vue/typescript/recommended',
     'plugin:vue/vue3-recommended',
-    'plugin:cypress/recommended' // Eslint for cypress
+    'plugin:cypress/recommended', // Eslint for cypress
+    './.eslintrc-auto-import.json', // Eslint for auto-import plugin
   ],
   globals: {
     'NodeJS': true,
@@ -24,7 +26,7 @@ module.exports = {
     'comma-dangle': ['error', 'only-multiline'], // Ex) { a, b, }
     'object-curly-spacing': ['error', 'always'], // Space between { },
     'no-multi-spaces': 'error', // Ex) var a =  1 => var a = 1
-    'no-unused-vars': 'warn',
+    'no-unused-vars': 'off',
     'space-before-blocks': 'error', // Ex) if (a){ => if (a) {
     'no-trailing-spaces': 'error', // No trailing spaces important!!
     'max-len': ['error', { 'code': 120 }], // limit max length
@@ -33,6 +35,7 @@ module.exports = {
     '@typescript-eslint/explicit-function-return-type': 'off',
     '@typescript-eslint/explicit-module-boundary-types': 'off',
     '@typescript-eslint/no-explicit-any': 'off',
+    '@typescript-eslint/no-unused-vars': 'warn',
   },
   overrides: [
     {

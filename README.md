@@ -9,9 +9,8 @@ Lightweight and quick starter Pack
 - Typescript
 - Vite 3.0
 
-# :orange_book: libraries
-- sass/scss
-- [Tailwind](https://tailwindcss.com/)
+# :gift: Packages
+## Dev tools
 - eslint
 - [vitest](): Unit test with vite
 - Cypress: E2E test
@@ -21,19 +20,26 @@ Lightweight and quick starter Pack
 ## CDN 
 - [material icon]('https://fonts.google.com/icons): Icons
 
-## Vue Plugins
+## Design
+- sass/scss
+- [Tailwind](https://tailwindcss.com/)
+
+## Vue and Vite Plugins
 - [vue-router-v4](https://router.vuejs.org/): Route system
 - [pinia](https://pinia.vuejs.org/): State management
 - [vue-i18n](https://kazupon.github.io/vue-i18n/): Internationalization
 - [Vite Pwa plugin](https://vite-plugin-pwa.netlify.app/): PWA
 - [vue-use](https://github.com/antfu/vueuse): Provide useful utilities to vue project
 - [vueuse/head](https://github.com/vueuse/head): Control head meta
+- [unplugin-auto-import](https://github.com/antfu/unplugin-auto-import): Auto-importing
 
-[//]: # (- [vee-validate]&#40;https://vee-validate.logaretm.com/v4/&#41;: Form Validate)
-
-## Considerable(recommended) libraries
+  
+## Recommended
+> Following packages is not installed. Consider packages based on your project before install.
+- [vite-plugin-md](https://github.com/antfu/vite-plugin-md): Markdown support
 - [vite-plugin-pages](https://github.com/hannoeru/vite-plugin-pages): File based pages
-- [unplugin-vue-components](https://github.com/antfu/unplugin-vue-components): make components to global component automatically 
+- [unplugin-vue-components](https://github.com/antfu/unplugin-vue-components): make components to global component automatically
+- [Vite SSG](https://github.com/antfu/vite-ssg): Static-site generator
 - [animate.css](): class based animation collection
 
 # :rocket: Getting Started
