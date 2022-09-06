@@ -26,7 +26,7 @@ module.exports = {
     'comma-dangle': ['error', 'only-multiline'], // Ex) { a, b, }
     'object-curly-spacing': ['error', 'always'], // Space between { },
     'no-multi-spaces': 'error', // Ex) var a =  1 => var a = 1
-    'no-unused-vars': 'off',
+    'no-unused-vars': 'warn',
     'space-before-blocks': 'error', // Ex) if (a){ => if (a) {
     'no-trailing-spaces': 'error', // No trailing spaces important!!
     'max-len': ['error', { 'code': 120 }], // limit max length
@@ -35,7 +35,7 @@ module.exports = {
     '@typescript-eslint/explicit-function-return-type': 'off',
     '@typescript-eslint/explicit-module-boundary-types': 'off',
     '@typescript-eslint/no-explicit-any': 'off',
-    '@typescript-eslint/no-unused-vars': 'warn',
+    // '@typescript-eslint/no-unused-vars': 'warn',
   },
   overrides: [
     {
