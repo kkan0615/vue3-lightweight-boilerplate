@@ -94,13 +94,7 @@
       <div
         class="tw-flex tw-space-x-4"
       >
-        <div
-          class="example-link"
-        >
-          <router-link :to="{ name: 'ExampleForm' }">
-            {{ i18n.t('Types.Models.Views.Examples.Links.form') }}
-          </router-link>
-        </div>
+        <!-- Pinia example link -->
         <div
           class="example-link"
         >

@@ -17,7 +17,6 @@ Lightweight and quick starter Pack
 - Cypress: E2E test
 - [Husky 8](https://github.com/typicode/husky)
 - [carbon icons](https://carbondesignsystem.com/guidelines/icons/library/): Icons
-- [yup](https://www.npmjs.com/package/yup): Form Validate
 
 ## CDN 
 - [material icon]('https://fonts.google.com/icons): Icons
