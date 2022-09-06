@@ -1,4 +1,4 @@
-// eslint-disable-next-line no-undef
+// eslint-disable-next-line no-undef, @typescript-eslint/no-var-requires
 const colors = require('tailwindcss/colors')
 
 /** @type {import('tailwindcss').Config} */
