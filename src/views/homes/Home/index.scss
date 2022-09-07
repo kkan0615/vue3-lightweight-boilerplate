@@ -37,4 +37,8 @@
   .electron-link {
     @apply tw-flex tw-items-center tw-justify-center tw-space-x-2 tw-text-zinc-500 hover:tw-text-primary-500 tw-text-sm;
   }
+
+  .example-link {
+    @apply tw-text-zinc-500 hover:tw-text-primary-500 tw-text-sm tw-capitalize;
+  }
 }

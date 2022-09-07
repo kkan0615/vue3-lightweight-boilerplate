@@ -8,4 +8,6 @@ postcss.config.js
 **/*.json
 **/*.scss
 **/*.md
+src/env.d.ts
 yarn.lock
+*.log

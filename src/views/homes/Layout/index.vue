@@ -1,10 +1,11 @@
 <template>
   <div>
-    <router-view />
+    <RouterView />
     <div
       class="footer page-content"
     >
-      <use-dark-btn />
+      <UseDarkBtn />
+      <TranslateBtn />
     </div>
   </div>
 </template>
@@ -15,6 +16,7 @@ export default {
 </script>
 <script setup lang="ts">
 import UseDarkBtn from '@/components/buttons/UseDark/index.vue'
+import TranslateBtn from '@/components/buttons/Translation/index.vue'
 </script>
 <style
   scoped

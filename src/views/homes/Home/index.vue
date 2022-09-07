@@ -15,12 +15,13 @@
         >
       </div>
       <h6>
-        {{ i18n.t('Views.Home.projectName') }}
+        {{ i18n.t('Views.Home.projectName') }} {{ i18n.t('hello') }}
       </h6>
       <div
         class="home-container-button-container"
       >
         <a
+          id="github-link"
           target="_blank"
           href="https://github.com/kkan0615/vue3-lightweight-boilerplate"
         >
@@ -63,22 +64,44 @@
       <div
         class="tw-grid tw-grid-cols-2 tw-gap-8"
       >
-        <feature-card
+        <FeatureCard
           v-for="feature in featureList"
           :key="feature.id"
         >
-          <feature-card-icon>
+          <FeatureCardIcon>
             {{ feature.icon }}
-          </feature-card-icon>
-          <feature-card-item>
-            <feature-card-header>
+          </FeatureCardIcon>
+          <FeatureCardItem>
+            <FeatureCardHeader>
               {{ feature.title }}
-            </feature-card-header>
-            <feature-card-body>
+            </FeatureCardHeader>
+            <FeatureCardBody>
               {{ feature.content }}
-            </feature-card-body>
-          </feature-card-item>
-        </feature-card>
+            </FeatureCardBody>
+          </FeatureCardItem>
+        </FeatureCard>
+      </div>
+    </div>
+    <!-- Example links -->
+    <div
+      class="page-content tw-mt-8"
+    >
+      <h6
+        class="dark:tw-text-gray-400 tw-text-gray-600 tw-mb-2 tw-capitalize"
+      >
+        {{ i18n.t('Types.Models.Views.Examples.title') }}
+      </h6>
+      <div
+        class="tw-flex tw-space-x-4"
+      >
+        <!-- Pinia example link -->
+        <div
+          class="example-link"
+        >
+          <RouterLink :to="{ name: 'ExamplePinia' }">
+            {{ i18n.t('Types.Models.Views.Examples.Links.pinia') }}
+          </RouterLink>
+        </div>
       </div>
     </div>
   </div>

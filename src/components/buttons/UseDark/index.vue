@@ -25,7 +25,6 @@ export default {
 }
 </script>
 <script setup lang="ts">
-import { useDark, useToggle } from '@vueuse/core'
 import { useDarkOption } from '@/types/system'
 
 const isDark = useDark(useDarkOption)

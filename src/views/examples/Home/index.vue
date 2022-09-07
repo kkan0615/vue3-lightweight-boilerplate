@@ -2,13 +2,13 @@
   <div>
     ExampleIndex
     <div>
-      <router-link
+      <RouterLink
         :to="{
           name: 'ExamplePinia'
         }"
       >
         Pinia Example page
-      </router-link>
+      </RouterLink>
     </div>
   </div>
 </template>
