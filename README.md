@@ -8,7 +8,7 @@ Lightweight and quick starter Pack
 - Vue 3
 - Typescript
 - Vite 3.0
-- Yarn berry
+- yarn berry
 
 # :gift: Packages
 ## Dev tools
