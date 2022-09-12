@@ -8,6 +8,7 @@ Lightweight and quick starter Pack
 - Vue 3
 - Typescript
 - Vite 3.0
+- Yarn berry
 
 # :gift: Packages
 ## Dev tools
@@ -43,6 +44,12 @@ Lightweight and quick starter Pack
 - [animate.css](): class based animation collection
 
 # :rocket: Getting Started
+## Update to yarn berry
+```
+yarn set version berry
+
+yarn --version
+```
 ## Dev
 ```shell
 yarn dev
