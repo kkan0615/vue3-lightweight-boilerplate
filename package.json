@@ -10,7 +10,7 @@
     "test:once": "vitest run",
     "test:ui": "vitest --ui",
     "test:e2e": "cypress open",
-    "eslint:fix": "eslint --fix \"**/*.{ts,tsx}\"",
+    "eslint:fix": "eslint --fix \"**/*.{ts,tsx,vue}\"",
     "prepare": "husky install"
   },
   "dependencies": {
