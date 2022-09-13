@@ -3,6 +3,7 @@ import enDictionary from './langs/en'
 import koDictionary from '@/locales/langs/ko'
 import { SupportedLang } from '@/types/system'
 
+// Default locale
 export const DEFAULT_FALLBACK_LOCALE = 'en'
 
 const messages: Record<SupportedLang, any> = {
