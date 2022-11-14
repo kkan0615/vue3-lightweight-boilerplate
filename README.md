@@ -27,6 +27,7 @@ Lightweight and quick starter Pack
 - [vue-i18n](https://kazupon.github.io/vue-i18n/) for Internationalization
 - Vue hooks [vue-use](https://github.com/antfu/vueuse) provides useful utilities to vue project
 - Handle SEO meta in head [vueuse/head](https://github.com/vueuse/head)
+- Icon packages [iconify](https://docs.iconify.design/icon-components/vue/)
 - Assist to develop conveniently 
   - [unplugin-auto-import](https://github.com/antfu/unplugin-auto-import): Auto-importing
   

@@ -1,17 +1,16 @@
 <template>
-  <button
-    @click="onClickOpen"
-  >
-    <span class="material-symbols-outlined">
-      translate
-    </span>
-  </button>
-  <Teleport to="body">
-    <TranslateBtnDialog
-      v-if="isOpen"
-      @close="handleClose"
-    />
-  </Teleport>
+  <Dialog>
+    <template
+      #activator="{open}"
+    >
+      <button
+        class="tw-text-3xl"
+        @click="open"
+      >
+        <Icon icon="clarity:language-line" />
+      </button>
+    </template>
+  </Dialog>
 </template>
 <script lang="ts">
 export default {
@@ -19,18 +18,8 @@ export default {
 }
 </script>
 <script setup lang="ts">
-import { ref } from 'vue'
-import TranslateBtnDialog from '@/components/buttons/Translation/components/Dialog.vue'
-
-const isOpen = ref(false)
-
-const onClickOpen = () => {
-  isOpen.value = true
-}
-
-const handleClose = () => {
-  isOpen.value = false
-}
+import { Icon } from '@iconify/vue'
+import Dialog from '@/components/buttons/Translation/components/Dialog.vue'
 
 </script>
 <style

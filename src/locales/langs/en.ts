@@ -20,7 +20,7 @@ const enDictionary = {
       invite: 'invite',
       offWork: 'off work',
     },
-    Titles: {
+    titles: {
       cancel: 'cancel',
       delete: 'delete',
       total: 'total',
@@ -28,8 +28,7 @@ const enDictionary = {
       comment: 'comment',
       information: 'information',
       overview: 'overview',
-      contentNavigator: 'on this page',
-      getOffWork: 'get off the work of {name}'
+      language: 'language'
     },
     Messages: {
       cancelSave: 'Would you like to cancel save?',

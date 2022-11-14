@@ -1,44 +1,50 @@
 <template>
-  <div
+  <slot
+    name="activator"
+    :open="handleOpen"
+  />
+  <dialog
+    ref="dialogEl"
     class="translate-btn-dialog"
+    @click="handleClose"
   >
     <div
-      class="translate-btn-dialog-header"
+      @click.stop
     >
-      <h6>
-        header name
-      </h6>
-      <button
-        class="tw-ml-auto"
-        @click="closeModal"
+      <div
+        class="translate-btn-dialog-header"
       >
-        <span
-          class="material-symbols-outlined"
+        <h6>
+          {{ t('commons.titles.language') }}
+        </h6>
+        <button
+          class="tw-ml-auto tw-text-2xl"
+          @click="handleClose"
         >
-          close
-        </span>
-      </button>
-    </div>
-    <div
-      class="translate-btn-dialog-body"
-    >
-      <ul
-        class="translate-btn-dialog-body-list"
+          <Icon icon="carbon:close" />
+        </button>
+      </div>
+      <div
+        class="translate-btn-dialog-body"
       >
-        <li
-          v-for="supportedLang in supportedLangList"
-          :key="supportedLang"
-          class="translate-btn-dialog-body-list-item"
-          :class="{
-            'translate-btn-dialog-body-list-item--active': lang === supportedLang,
-          }"
-          @click="changeLocale(supportedLang)"
+        <ul
+          class="translate-btn-dialog-body-list"
         >
-          {{ supportedLang }}
-        </li>
-      </ul>
+          <li
+            v-for="supportedLang in supportedLangList"
+            :key="supportedLang"
+            class="translate-btn-dialog-body-list-item"
+            :class="{
+              'translate-btn-dialog-body-list-item--active': lang === supportedLang,
+            }"
+            @click="changeLocale(supportedLang)"
+          >
+            {{ supportedLang }}
+          </li>
+        </ul>
+      </div>
     </div>
-  </div>
+  </dialog>
 </template>
 <script lang="ts">
 export default {
@@ -46,21 +52,31 @@ export default {
 }
 </script>
 <script setup lang="ts">
+import { Icon } from '@iconify/vue'
 import { SupportedLang, supportedLangList } from '@/types/system'
 import useSettingStore from '@/store/modules/setting'
 import { storeToRefs } from 'pinia'
+import { ref } from 'vue'
+import { useI18n } from 'vue-i18n'
+
+const { t, locale } = useI18n()
 
 const settingStore = useSettingStore()
 const { lang } = storeToRefs(settingStore)
 
-const emits = defineEmits(['close'])
+const dialogEl = ref<HTMLDialogElement | null>(null)
 
-const closeModal = () => {
-  emits('close')
+const changeLocale = (lang: SupportedLang) => {
+  settingStore.setLang(lang)
+  locale.value = lang
 }
 
-const changeLocale = (lang: SupportedLang | 'preference') => {
-  settingStore.setLang(lang)
+const handleOpen = () => {
+  dialogEl.value?.showModal()
+}
+
+const handleClose = () => {
+  dialogEl.value?.close()
 }
 
 </script>

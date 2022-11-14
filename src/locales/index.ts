@@ -17,7 +17,7 @@ const i18n = createI18n({
   legacy: false,
   locale: DEFAULT_FALLBACK_LOCALE,
   fallbackLocale: DEFAULT_FALLBACK_LOCALE,
-  messages,
+  messages
 })
 
 export default i18n
