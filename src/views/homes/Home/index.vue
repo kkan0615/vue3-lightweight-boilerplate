@@ -15,7 +15,7 @@
         >
       </div>
       <h6>
-        {{ i18n.t('Views.Home.projectName') }} {{ i18n.t('hello') }}
+        {{ t('Views.Home.projectName') }} {{ t('hello') }}
       </h6>
       <div
         class="home-container-button-container"
@@ -59,7 +59,7 @@
       <h6
         class="dark:tw-text-gray-400 tw-text-gray-600 tw-mb-2 tw-capitalize"
       >
-        {{ i18n.t('Types.Models.Views.Features.title') }}
+        {{ t('Types.Models.Views.Features.title') }}
       </h6>
       <div
         class="tw-grid tw-grid-cols-2 tw-gap-8"
@@ -73,35 +73,13 @@
           </FeatureCardIcon>
           <FeatureCardItem>
             <FeatureCardHeader>
-              {{ feature.title }}
+              {{ t(feature.title) }}
             </FeatureCardHeader>
             <FeatureCardBody>
-              {{ feature.content }}
+              {{ t(feature.content) }}
             </FeatureCardBody>
           </FeatureCardItem>
         </FeatureCard>
-      </div>
-    </div>
-    <!-- Example links -->
-    <div
-      class="page-content tw-mt-8"
-    >
-      <h6
-        class="dark:tw-text-gray-400 tw-text-gray-600 tw-mb-2 tw-capitalize"
-      >
-        {{ i18n.t('Types.Models.Views.Examples.title') }}
-      </h6>
-      <div
-        class="tw-flex tw-space-x-4"
-      >
-        <!-- Pinia example link -->
-        <div
-          class="example-link"
-        >
-          <RouterLink :to="{ name: 'ExamplePinia' }">
-            {{ i18n.t('Types.Models.Views.Examples.Links.pinia') }}
-          </RouterLink>
-        </div>
       </div>
     </div>
   </div>
@@ -122,7 +100,7 @@ import FeatureCardItem from '@/views/homes/Home/components/FeatureCardItem.vue'
 import FeatureCardHeader from '@/views/homes/Home/components/FeatureCardHeader.vue'
 import FeatureCardBody from '@/views/homes/Home/components/FeatureCardBody.vue'
 
-const i18n = useI18n()
+const { t } = useI18n()
 
 /* Change head */
 useHead({

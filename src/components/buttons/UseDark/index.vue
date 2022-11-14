@@ -4,19 +4,15 @@
     @click="onClickToggleDarkBtn"
   >
     <!-- Dark mode -->
-    <span
+    <Icon
       v-if="isDark"
-      class="material-symbols-outlined"
-    >
-      dark_mode
-    </span>
+      icon="ic:outline-dark-mode"
+    />
     <!-- Light mode -->
-    <span
+    <Icon
       v-else
-      class="material-symbols-outlined"
-    >
-      light_mode
-    </span>
+      icon="ic:outline-light-mode"
+    />
   </button>
 </template>
 <script lang="ts">
@@ -25,6 +21,7 @@ export default {
 }
 </script>
 <script setup lang="ts">
+import { Icon } from '@iconify/vue'
 import { useDarkOption } from '@/types/system'
 
 const isDark = useDark(useDarkOption)
@@ -40,6 +37,7 @@ const onClickToggleDarkBtn = () => {
 >
 .use-dark-btn {
   @apply tw-inline-flex;
+  @apply tw-text-3xl;
 
   span {
     transition: background 0.3s linear;

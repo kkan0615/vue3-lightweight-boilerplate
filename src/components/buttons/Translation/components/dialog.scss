@@ -1,25 +1,29 @@
 .translate-btn-dialog {
-  @apply tw-fixed;
-  @apply tw-top-1/2 tw-left-1/2;
-  @apply tw-z-50;
   @apply tw-border tw-rounded;
-  //z-index: 999;
-  @apply tw-w-96;
+  @apply tw-p-0;
+  @apply tw-w-full tw-max-w-md;
   @apply tw-shadow-2xl;
+  @apply tw-text-background-text-light dark:tw-text-background-text-dark;
   @apply tw-bg-background-main-light dark:tw-bg-background-main-dark;
-  transform: translate(-50%, -50%);
+  margin-left: auto !important; // footer error handler
+  margin-right: auto !important; // footer error handler
 
   &-header {
-    @apply tw-flex;
+    @apply tw-flex tw-items-center;
     @apply tw-bg-primary-500 tw-text-primary-text;
     @apply tw-pt-2 tw-py-1 tw-px-4;
     @apply tw-border-b;
+
+    h6 {
+      @apply tw-capitalize;
+    }
   }
 
   &-body {
     &-list {
       @apply tw-divide-y;
       &-item {
+        @apply tw-text-left tw-text-xl;
         @apply hover:tw-bg-zinc-800 hover:tw-text-white;
         @apply tw-cursor-pointer;
         @apply tw-py-2 tw-px-4;
